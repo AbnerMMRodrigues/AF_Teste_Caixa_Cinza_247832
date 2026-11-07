@@ -32,19 +32,19 @@ Depois disso, ainda no sub-menu de autenticação, fomos para a opção "Users" 
 
 Com isso, voltamos ao menu principal do projeto, e coletamos a API_Key e a Base_URL do projeto.
 
-###PROJETO CRIADO/PAINEL
+### PROJETO CRIADO/PAINEL
 
 !["Projeto Criado"](prints/Supabase_Painel.png)
 
-###AUTENTICAÇÃO HABILITADA
+### AUTENTICAÇÃO HABILITADA
 
 !["Autenticação"](prints/Supabase_Autenticação_Habilitada.png)
 
-###USUÁRIO CRIADO
+### USUÁRIO CRIADO
 
 !["Usuário"](prints/Supabase_Usuario_Criado.png)
 
-###CREDENCIAIS DA API
+### CREDENCIAIS DA API
 
 !["Usuário"](prints/Supabase_Credenciais.png)
 
