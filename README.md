@@ -50,6 +50,30 @@ Com isso, voltamos ao menu principal do projeto, e coletamos a API_Key e a Base_
 
 # Configuração do Postman
 
+O processo de criação do banco no Supabase foi feito da seguinte maneira:
+
+Baixar o CLI do Postman Desktop -> Criar uma Conta no Postman -> Criar um novo Workspace
+
+Com o novo workspace criado, o primeiro passo é criar um Environment. Foi clicado no "+" ao lado da barra de pesquisa no topo da barra lateral esquerda, e selecionada a opção "Environment" para ser criado.
+
+Com ele criado, as seguintes variaveis foram inseridas no mesmo:
+
+**base_url:** base_url do projeto no supabase
+**api_key:** api_key do usuario no supabase
+**email:** email do usuario cadastrado no supabase
+**senha:** senha do usuário cadastrado no supabase
+**acess_token:** mesmo dado da API_Keuy
+
+Após a configuração do Environment, no painel inicial do POSTMAN, selecione o Environment criado no topo superior direito para ele ser usado e o Postman conseguir ter acesso ao banco do Supabase.
+
+### Workspace
+
+!["Workspace"](prints/Postman_Workspace.png)
+
+### Environment e Variaveis
+
+!["Autenticação"](prints/Postman_Environment_e_Variaveis.png)
+
 # Configuração das Requisições
 
 # Execução dos Testes
