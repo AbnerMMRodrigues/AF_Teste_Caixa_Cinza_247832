@@ -83,9 +83,13 @@ Após a Collection ser criada, basta colocar o mouse sobre ela e clicar no "+" p
 Essa requisição foi configurada da seguinte forma:
 
 **Nome Utilizado:** Requisição 1 - Login
+
 **Endpoint Utilizado:** {{base_url}}/auth/v1/token?grant_type=password
+
 **Método HTTP Utilizado:** POST
+
 **Header Utilizado:**
+
 | Key | Value |
 |---|---|
 | api_key | XXXXX |
@@ -101,8 +105,11 @@ Essa requisição foi configurada da seguinte forma:
 Após essa primeira requisição ser criada, ela foi duplicada e transformada em outras quatro requisições, com os seguintes nomes:
 
 Requisição 2 - Senha Incorreta
+
 Requisição 3 - Usuário Inexistente
+
 Requisição 4 - Campos Vazios
+
 Requisição 5 - Credenciais Inválidas
 
 Se comparadas com a primeira requisição, as que foram feitas a partir dela apenas mudam o Body JSON, trocando os valores de e-mail e/ou password. Na requisição 4, o campo "email" é removido do Body JSON.
