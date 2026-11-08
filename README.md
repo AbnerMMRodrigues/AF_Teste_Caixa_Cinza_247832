@@ -1,4 +1,4 @@
-<img width="164" height="25" alt="image" src="https://github.com/user-attachments/assets/e9f5ead0-731c-4258-9a00-2fced89e87d8" /># AF_Teste_Caixa_Cinza_247832
+# AF_Teste_Caixa_Cinza_247832
 
 # Introdução
 
@@ -199,4 +199,26 @@ Esse registro foi realizado para fixar boas práticas, uma vez que, quanto mais 
 
 # Resultados Obtidos
 
+# Resultados Obtidos
+
+Foram realizados cinco testes para verificar o funcionamento da autenticação da API utilizando o Supabase e o Postman.
+
+Os resultados foram satisfatórios, apresentando os seguintes comportamentos:
+
+- **Login válido:** autenticação realizada com sucesso (HTTP 200).
+- **Senha incorreta:** acesso negado (HTTP 400).
+- **Usuário inexistente:** acesso negado (HTTP 400).
+- **Campos vazios:** requisição rejeitada (HTTP 400).
+- **Credenciais inválidas:** autenticação negada (HTTP 400).
+
+Os resultados demonstraram que a API conseguiu diferenciar tentativas válidas e inválidas de autenticação, respondendo conforme o esperado em cada cenário. Os dados também foram registrados em uma planilha para facilitar a análise e documentação dos testes.
+
 # Conclusão
+
+# Conclusão
+
+A atividade permitiu aplicar os conhecimentos sobre testes de caixa cinza em APIs. Os testes foram executados corretamente, e a autenticação funcionou conforme esperado, permitindo o acesso com credenciais válidas e bloqueando tentativas inválidas.
+
+As principais dificuldades envolveram a configuração do Supabase e a integração com o Postman. Não foram identificadas falhas funcionais nos cenários testados, mas poderiam ser implementados testes adicionais, como validação de tokens, expiração de sessões e tentativas consecutivas de login.
+
+Por fim, os testes de caixa cinza demonstraram sua importância na identificação de possíveis problemas, na verificação da segurança e na melhoria da confiabilidade das APIs.
