@@ -199,8 +199,6 @@ Esse registro foi realizado para fixar boas práticas, uma vez que, quanto mais 
 
 # Resultados Obtidos
 
-# Resultados Obtidos
-
 Foram realizados cinco testes para verificar o funcionamento da autenticação da API utilizando o Supabase e o Postman.
 
 Os resultados foram satisfatórios, apresentando os seguintes comportamentos:
@@ -212,8 +210,6 @@ Os resultados foram satisfatórios, apresentando os seguintes comportamentos:
 - **Credenciais inválidas:** autenticação negada (HTTP 400).
 
 Os resultados demonstraram que a API conseguiu diferenciar tentativas válidas e inválidas de autenticação, respondendo conforme o esperado em cada cenário. Os dados também foram registrados em uma planilha para facilitar a análise e documentação dos testes.
-
-# Conclusão
 
 # Conclusão
 
