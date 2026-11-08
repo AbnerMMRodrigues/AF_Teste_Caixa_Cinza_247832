@@ -130,7 +130,7 @@ Se comparadas com a primeira requisição, as que foram feitas a partir dela ape
 
 Foram executados os testes respectivos das 5 requisições criadas, sendo eles:
 
-| Cenário | Entrada Utilizada | Resultado Esperado | Resultado Obtido | Status
+| Cenário | Entrada Utilizada | Resultado Esperado | Resultado Obtido | Status |
 |---|---|---|---|---|
 | Login Válido | Credenciais corretas | Status 200 | Sucesso | OK | 
 | Senha Incorreta | Senha Errada | Status 400 | Sucesso | OK |
@@ -141,6 +141,7 @@ Foram executados os testes respectivos das 5 requisições criadas, sendo eles:
 ### Requisição 1 - Login
 
 **Entradas Utilizadas:** "email": "{{email}}", "password": "{{senha}}"
+
 **Resultado:** Sucesso - Código 200 + API_Key
 
 !["Teste_1"](prints/Teste_1.png)
@@ -149,6 +150,7 @@ Foram executados os testes respectivos das 5 requisições criadas, sendo eles:
 ### Requisição 2 - Senha Incorreta
 
 **Entradas Utilizadas:** "email": "{{email}}", "password": "123"
+
 **Resultado:** Sucesso - Código 400 + Login Negado
 
 !["Teste_2"](prints/Teste_2.png)
@@ -157,6 +159,7 @@ Foram executados os testes respectivos das 5 requisições criadas, sendo eles:
 ### Requisição 3 - Usuário Inexistente
 
 **Entradas Utilizadas:** "email": "aaaa", "password": "{{senha}}"
+
 **Resultado:** Sucesso - Código 400 + Login Negado
 
 !["Teste_3"](prints/Teste_3.png)
@@ -165,6 +168,7 @@ Foram executados os testes respectivos das 5 requisições criadas, sendo eles:
 ### Requisição 4 - Campos Vazios
 
 **Entradas Utilizadas:** password": "{{senha}}"
+
 **Resultado:** Sucesso - Código 400 + Login Negado
 
 !["Teste_4"](prints/Teste_4.png)
@@ -173,12 +177,25 @@ Foram executados os testes respectivos das 5 requisições criadas, sendo eles:
 ### Requisição 5 - Credenciais Inválidas
 
 **Entradas Utilizadas:** "email": "abner", "password": "122"
+
 **Resultado:** Sucesso - Código 400 + Login Negado
 
 !["Teste_5"](prints/Teste_5.png)
 !["Teste_5_Response"](prints/Teste_5_Response.png)
 
 # Registro dos Testes
+
+Após a conclusão dos testes, os resultados foram registrados em uma planilha utilizando o seguinte modelo:
+
+| ID do Teste | Cenário | Entrada Utilizada | Resultado Esperado | Resultado Obtido | Mensagem de Erro | Status |
+|---|---|---|---|---|---|---|
+| XXX | XXX | XXX | XXX | XXX | XXX | XXX |
+
+Esse registro foi realizado para fixar boas práticas, uma vez que, quanto mais registrado e documentado é um processo/projeto, mais fácil de consultar e achar erros é depois de finalizado.
+
+### PLANILHA PREENCHIDA
+
+!["Planilha"](prints/Tabela_Preenchida.png)
 
 # Resultados Obtidos
 
