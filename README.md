@@ -1,4 +1,4 @@
-# AF_Teste_Caixa_Cinza_247832
+<img width="164" height="25" alt="image" src="https://github.com/user-attachments/assets/e9f5ead0-731c-4258-9a00-2fced89e87d8" /># AF_Teste_Caixa_Cinza_247832
 
 # Introdução
 
@@ -8,11 +8,11 @@ O intuito da atividade é demonstrar e aplicar o conhecimento adquirido em aula 
 
 # Objetivo da Atividade
 
-## 4.1 Objetivo Geral
+## Objetivo Geral
 
 Criar um banco de dados no Supabase e realizar testes com o mesmo através do Postman.
 
-## 4.2 Objetivos Técnicos
+## Objetivos Técnicos
 
 - criar e configurar um banco de dados no Supabase;
 - criar e configurar um workspace, collection e environment no Postman;
@@ -95,7 +95,7 @@ Essa requisição foi configurada da seguinte forma:
 | api_key | XXXXX |
 | Content-Type | application/json |
 
-**Modelo de Body JSON utilizado: **
+**Modelo de Body JSON utilizado:**
 
 ***{
   "email": "XXXXXX",
@@ -127,6 +127,56 @@ Se comparadas com a primeira requisição, as que foram feitas a partir dela ape
 !["Body_Json"](prints/Postman_Body_JSON.png)
 
 # Execução dos Testes
+
+Foram executados os testes respectivos das 5 requisições criadas, sendo eles:
+
+| Cenário | Entrada Utilizada | Resultado Esperado | Resultado Obtido | Status
+|---|---|---|---|---|
+| Login Válido | Credenciais corretas | Status 200 | Sucesso | OK | 
+| Senha Incorreta | Senha Errada | Status 400 | Sucesso | OK |
+| Usuário Inexistente | Usuário não-cadastrado | Status 400  | Sucesso | OK |
+| Campos Vazios | Sem Campo de Usuário | Status 400 | Sucesso | OK |
+| Credenciais Inválidas | Credenciais Erradas | Status 400  | Sucesso | OK |
+
+### Requisição 1 - Login
+
+**Entradas Utilizadas:** "email": "{{email}}", "password": "{{senha}}"
+**Resultado:** Sucesso - Código 200 + API_Key
+
+!["Teste_1"](prints/Teste_1.png)
+!["Teste_1_Response"](prints/Teste_1_Response.png)
+
+### Requisição 2 - Senha Incorreta
+
+**Entradas Utilizadas:** "email": "{{email}}", "password": "123"
+**Resultado:** Sucesso - Código 400 + Login Negado
+
+!["Teste_2"](prints/Teste_2.png)
+!["Teste_2_Response"](prints/Teste_2_Response.png)
+
+### Requisição 3 - Usuário Inexistente
+
+**Entradas Utilizadas:** "email": "aaaa", "password": "{{senha}}"
+**Resultado:** Sucesso - Código 400 + Login Negado
+
+!["Teste_3"](prints/Teste_3.png)
+!["Teste_3_Response"](prints/Teste_3_Response.png)
+
+### Requisição 4 - Campos Vazios
+
+**Entradas Utilizadas:** password": "{{senha}}"
+**Resultado:** Sucesso - Código 400 + Login Negado
+
+!["Teste_4"](prints/Teste_4.png)
+!["Teste_4_Response"](prints/Teste_4_Response.png)
+
+### Requisição 5 - Credenciais Inválidas
+
+**Entradas Utilizadas:** "email": "abner", "password": "122"
+**Resultado:** Sucesso - Código 400 + Login Negado
+
+!["Teste_5"](prints/Teste_5.png)
+!["Teste_5_Response"](prints/Teste_5_Response.png)
 
 # Registro dos Testes
 
