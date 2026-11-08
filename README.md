@@ -66,15 +66,58 @@ Com ele criado, as seguintes variaveis foram inseridas no mesmo:
 
 Após a configuração do Environment, no painel inicial do POSTMAN, selecione o Environment criado no topo superior direito para ele ser usado e o Postman conseguir ter acesso ao banco do Supabase.
 
-### Workspace
+### WORKSPACE
 
 !["Workspace"](prints/Postman_Workspace.png)
 
-### Environment e Variaveis
+### ENVIRONMENT E VARIÁVEIS
 
 !["Autenticação"](prints/Postman_Environment_e_Variaveis.png)
 
 # Configuração das Requisições
+
+Após a configuração do Environment, o próximo passo é criar uma COLLECTION, e dentro dela, criar as requisições para fazer os testes. Para criar a Collection, o mesmo processo para criar um Environment foi feito, porém a opção "Collection" foi selecionada para criar. 
+
+Após a Collection ser criada, basta colocar o mouse sobre ela e clicar no "+" para criar uma nova requisição.
+
+Essa requisição foi configurada da seguinte forma:
+
+**Nome Utilizado:** Requisição 1 - Login
+**Endpoint Utilizado:** {{base_url}}/auth/v1/token?grant_type=password
+**Método HTTP Utilizado:** POST
+**Header Utilizado:**
+| Key | Value |
+|---|---|
+| api_key | XXXXX |
+| Content-Type | application/json |
+
+**Modelo de Body JSON utilizado: **
+
+***{
+  "email": "XXXXXX",
+  "password": "XXXXXX"
+}***
+
+Após essa primeira requisição ser criada, ela foi duplicada e transformada em outras quatro requisições, com os seguintes nomes:
+
+Requisição 2 - Senha Incorreta
+Requisição 3 - Usuário Inexistente
+Requisição 4 - Campos Vazios
+Requisição 5 - Credenciais Inválidas
+
+Se comparadas com a primeira requisição, as que foram feitas a partir dela apenas mudam o Body JSON, trocando os valores de e-mail e/ou password. Na requisição 4, o campo "email" é removido do Body JSON.
+
+### REQUISIÇÃO
+
+!["REQUISIÇÃO"](prints/Postman_Requisição_Criada.png)
+
+### HEADERS
+
+!["Headers"](prints/Postman_Headers.png)
+
+### BODY JSON
+
+!["Body_Json"](prints/Postman_Body_JSON.png)
 
 # Execução dos Testes
 
